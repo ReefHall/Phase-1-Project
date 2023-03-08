@@ -1,5 +1,6 @@
 
 const banner = document.querySelector('.banner')
+const navBar = document.querySelector('#navBar')
 
 
 fetch("http://localhost:3000/BootCamps")
@@ -14,6 +15,16 @@ function renderBootCamp(bootcamp) {
     const bootcampImg = document.createElement('img')
     const bootcampRating = document.createElement('p')
     const bootcampComment = document.createElement('p')
+    const li = document.createElement('li')
+    const anchor = document.createElement('a')
+    const div = document.createElement('div')
+
+    anchor.href = bootcamp.website
+    anchor.innerHTML = bootcamp.name
+    div.className = 'line'
+    
+    li.append(anchor)
+    navBar.append(li, div)
 
     bootcampImg.src = bootcamp.image
     bootcampRating.textContent = `Rating: ${bootcamp.rating}`
@@ -63,20 +74,6 @@ function submitForm(e) {
     })
         .then(response => response.json())
         .then(obj => renderBootCamp(obj))
-
-        const navBar = document.querySelector('#navBar')
-        const li = document.createElement('li')
-        const anchor = document.createElement('a')
-        const div = document.createElement('div')
-
-        div.className = 'line'
-        anchor.href = inPutWebsite.value
-        anchor.innerText = inPutName.value
-
-        li.append(anchor)
-        navBar.append(div,li)
-
-
 
     banner.style.grid_template_columns = "1fr";
 
