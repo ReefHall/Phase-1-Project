@@ -53,31 +53,39 @@ border-right:  2.5px solid #807f7f;
   /* height: 540px; */
   /* background-color: #c7e0ee; */
   background-color: rgb(92, 166, 240);
-  display:grid;
-  grid-template-columns: 1fr 1fr;
+  /* display:grid;
+  grid-template-columns: 1fr 1fr; */
   box-sizing: border-box;
   padding: 40px;
   padding-left: 215px;
   padding-right: 215px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 40px;
 }
 
 #DivElement{
  text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
 }
 
-#DivElementTwo{
-position: relative;
-bottom: 70px; 
-left: 4px;
+#clickBtn{
+position: static;
 width: 200px;
 background-color: rgba(181, 179, 179);
 color:white;
 box-sizing: border-box;
 padding: 10px;
+margin-top:-50px;
 }
 
-#DivElementTwo:hover{
-  background-color: rgba(181, 179, 179, 0.7);
+#clickBtn:hover{
   cursor:pointer;
 }
 

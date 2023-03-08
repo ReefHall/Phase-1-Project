@@ -9,25 +9,31 @@ fetch("http://localhost:3000/BootCamps")
 
 function renderBootCamp(bootcamp) {
     const divElement = document.createElement('div')
-    const divElementTwo = document.createElement('div')
+    const clickBtn = document.createElement('button')
+    const imgInfoDiv = document.createElement('div')
     const bootcampImg = document.createElement('img')
-    // const bootcampName = document.createElement('h2')
     const bootcampRating = document.createElement('p')
     const bootcampComment = document.createElement('p')
 
     bootcampImg.src = bootcamp.image
-    // bootcampName.textContent = bootcamp.name
     bootcampRating.textContent = `Rating: ${bootcamp.rating}`
     bootcampComment.textContent = `Comments: ${bootcamp.comment}`
+    imgInfoDiv.textContent = `Rating: ${bootcamp.rating} Comments: ${bootcamp.comment}`
+    imgInfoDiv.style.display ="none";
+
+
     bootcampImg.id = "img"
     divElement.id = "DivElement"
-    divElementTwo.id = "DivElementTwo"
+    clickBtn.id = "clickBtn"
+    clickBtn.textContent = "CLICK ME"
 
-    divElement.append(bootcampImg)
-    divElement.append(divElementTwo)
-    divElementTwo.append(bootcampRating, bootcampComment)
+    divElement.append(bootcampImg, clickBtn, imgInfoDiv)
+    divElement.append(clickBtn)
     banner.append(divElement)
 
+clickBtn.addEventListener("click", ()=>{
+    bootcampImg.style.display = "none";
+})
 
 }
 const form = document.getElementById('form')
