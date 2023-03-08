@@ -28,6 +28,7 @@ fetch("http://localhost:3000/BootCamps")
 
 
 function renderBootCamp(bootcamp){
+const divElement = document.createElement('div')
 const bootcampImg = document.createElement('img')
 // const bootcampName = document.createElement('h2')
 const bootcampRating = document.createElement('p')
@@ -38,8 +39,27 @@ bootcampImg.src = bootcamp.image
 bootcampRating.textContent = bootcamp.rating
 bootcampComment.textContent = bootcamp.comment
 bootcampImg.id = "img"
+divElement.id = "DivElement"
 
-banner.append(bootcampImg, bootcampRating, bootcampComment)
+divElement.append(bootcampImg, bootcampRating, bootcampComment)
+banner.append(divElement)
 
 
 }
+const form = document.getElementById('form')
+form.addEventListener('submit', (e) => submitForm(e))
+
+function submitForm(e) {
+    e.preventDefault()
+    const inPutName = document.getElementById('name')
+    const inPutRating = document.getElementById('rating')
+    const inPutComment = document.getElementById('comment')
+    const inPutWebsite = document.getElementById('website')
+    //const inputImage 
+
+    const newObj = {name: inPutName.value}
+                    
+
+
+}
+
