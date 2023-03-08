@@ -15,10 +15,14 @@ function renderBootCamp(bootcamp) {
     const bootcampRating = document.createElement('p')
     const bootcampComment = document.createElement('p')
 
+    const infoName = document.createElement('h1')
+    // const infoAddress = document.createElement('p')
+    // const infoTel = document.createElement('p')
+
     bootcampImg.src = bootcamp.image
+    infoName.textContent = bootcamp.name.toUpperCase()
     bootcampRating.textContent = `Rating: ${bootcamp.rating}`
     bootcampComment.textContent = `Comments: ${bootcamp.comment}`
-    imgInfoDiv.textContent = `Rating: ${bootcamp.rating} Comments: ${bootcamp.comment}`
     imgInfoDiv.style.display ="none";
 
 
@@ -27,12 +31,24 @@ function renderBootCamp(bootcamp) {
     clickBtn.id = "clickBtn"
     clickBtn.textContent = "CLICK ME"
 
+    imgInfoDiv.append(infoName, bootcampRating, bootcampComment)
     divElement.append(bootcampImg, clickBtn, imgInfoDiv)
     divElement.append(clickBtn)
     banner.append(divElement)
 
 clickBtn.addEventListener("click", ()=>{
     bootcampImg.style.display = "none";
+    imgInfoDiv.style.display = "block";
+    imgInfoDiv.style.height ="260px";
+    imgInfoDiv.style.width ="300px";
+    imgInfoDiv.style.background ="gray";
+    imgInfoDiv.style.box_sizing = "border-size";
+    imgInfoDiv.style.padding ="30px";
+    clickBtn.style.display ="none";
+
+    setTimeout(()=>{
+        window.location.reload(true)
+        }, 2000)
 })
 
 }
