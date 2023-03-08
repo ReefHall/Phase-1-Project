@@ -45,6 +45,7 @@ divElement.append(bootcampImg, bootcampRating, bootcampComment)
 banner.append(divElement)
 
 
+
 }
 const form = document.getElementById('form')
 form.addEventListener('submit', (e) => submitForm(e))
@@ -55,11 +56,25 @@ function submitForm(e) {
     const inPutRating = document.getElementById('rating')
     const inPutComment = document.getElementById('comment')
     const inPutWebsite = document.getElementById('website')
-    //const inputImage 
+    const inputImage = document.getElementById('image')
 
-    const newObj = {name: inPutName.value}
+    const newObj = {name: inPutName.value,
+                    image: inputImage.value,
+                    rating: inPutRating.value,
+                    comment: inPutComment.value,
+                    website: inPutRating.value
+                   }
+    fetch('http://localhost:3000/BootCamps', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newObj)
+    })
+      .then(response => response.json())
+      .then(obj => renderBootCamp(obj))
                     
-
+banner.style.grid_template_columns="1fr";
 
 }
 
