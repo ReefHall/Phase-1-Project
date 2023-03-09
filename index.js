@@ -14,10 +14,67 @@ function renderBootCamp(bootcamp) {
     const imgInfoDiv = document.createElement('div')
     const bootcampImg = document.createElement('img')
     const bootcampRating = document.createElement('p')
-    const bootcampComment = document.createElement('p')
+    //const bootcampComment = document.createElement('p')
     const li = document.createElement('li')
     const anchor = document.createElement('a')
     const div = document.createElement('div')
+    const infoName = document.createElement('h1')
+    const comments = document.createElement('p')
+
+    comments.textContent = 'Comments:'
+
+    imgInfoDiv.append(infoName, bootcampRating)
+    imgInfoDiv.append(comments)
+    bootcamp.comments.forEach(data => renderComment(data))
+
+    function renderComment(data) {
+     const bootcampComment = document.createElement('p')
+     bootcampComment.innerText = `"${data}"`;
+     imgInfoDiv.append(bootcampComment)
+    }
+
+    
+    const commentForm = document.createElement('form')
+    const inputComment = document.createElement('input')
+    const btnSubmit = document.createElement('button')
+
+    inputComment.type = "text"
+    inputComment.placeholder = "Comment Here"
+    btnSubmit.type = 'submit'
+    btnSubmit.innerText = "Add"
+    btnSubmit.style.display = 'none'
+    inputComment.style.display = 'none'
+
+    commentForm.id = 'commentForm'
+    inputComment.id = 'inputComment'
+    btnSubmit.id = 'btnSubmit'
+    commentForm.append(inputComment, btnSubmit)
+    
+
+    commentForm.addEventListener('submit', (e) => addComment(e, bootcamp))
+
+    function addComment(e, bootcamp) {
+        e.preventDefault();
+       const array = [...bootcamp.comments, inputComment.value]
+        const obj = {comments: array};
+
+        renderComment(inputComment.value)
+
+        fetch(`http://localhost:3000/BootCamps/${bootcamp.id}`, {
+            method: "PATCH",
+            headers:{
+                'Content-Type': 'application/json'
+
+            },
+            body: JSON.stringify(obj)
+        })
+
+    
+
+
+
+    }
+
 
     anchor.href = bootcamp.website
     anchor.innerHTML = bootcamp.name
@@ -26,14 +83,14 @@ function renderBootCamp(bootcamp) {
     li.append(anchor)
     navBar.append(li, div)
 
-    const infoName = document.createElement('h1')
+    //const infoName = document.createElement('h1')
     // const infoAddress = document.createElement('p')
     // const infoTel = document.createElement('p')
 
     bootcampImg.src = bootcamp.image
     infoName.textContent = bootcamp.name.toUpperCase()
     bootcampRating.textContent = `Rating: ${bootcamp.rating}`
-    bootcampComment.textContent = `Comments: ${bootcamp.comment}`
+    //bootcampComment.textContent = `Comments: ${bootcamp.comment}`
     imgInfoDiv.style.display ="none";
 
 
@@ -42,8 +99,8 @@ function renderBootCamp(bootcamp) {
     clickBtn.id = "clickBtn"
     clickBtn.textContent = "CLICK ME"
 
-    imgInfoDiv.append(infoName, bootcampRating, bootcampComment)
-    divElement.append(bootcampImg, clickBtn, imgInfoDiv)
+   // imgInfoDiv.append(infoName, bootcampRating, bootcampComment)
+    divElement.append(bootcampImg, clickBtn, imgInfoDiv, commentForm)
     divElement.append(clickBtn)
     banner.append(divElement)
 
@@ -58,11 +115,16 @@ clickBtn.addEventListener("click", ()=>{
     imgInfoDiv.style.border_radius = "30px";
     imgInfoDiv.style.color = "white";
     clickBtn.style.display ="none";
+    inputComment.style.display = 'block'
+    btnSubmit.style.display = 'block'
+
+    
 
 
 })
 }
 const form = document.getElementById('form')
+form .id = "form"
 form.addEventListener('submit', (e) => submitForm(e))
 
 function submitForm(e) {
@@ -78,7 +140,7 @@ function submitForm(e) {
         name: inPutName.value,
         image: inputImage.value,
         rating: inPutRating.value,
-        comment: inPutComment.value,
+        comment:[inPutComment.value],
         website: inPutWebsite.value
     }
     fetch('http://localhost:3000/BootCamps', {
