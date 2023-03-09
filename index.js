@@ -47,20 +47,35 @@ function renderBootCamp(bootcamp) {
     divElement.append(clickBtn)
     banner.append(divElement)
 
+const xBtn = document.createElement('button')
+
 clickBtn.addEventListener("click", ()=>{
     bootcampImg.style.display = "none";
     imgInfoDiv.style.display = "block";
     imgInfoDiv.style.height ="260px";
     imgInfoDiv.style.width ="300px";
-    imgInfoDiv.style.background ="gray";
+    imgInfoDiv.style.background ="white";
     imgInfoDiv.style.box_sizing = "border-size";
     imgInfoDiv.style.padding = "30px";
     imgInfoDiv.style.border_radius = "30px";
-    imgInfoDiv.style.color = "white";
+    imgInfoDiv.style.color = "black";
     clickBtn.style.display ="none";
+    imgInfoDiv.style.borderRadius ="10px";
 
+
+    xBtn.textContent = "x"
+    xBtn.id = "xbtn"
+
+    imgInfoDiv.append(xBtn)
 
 })
+
+xBtn.addEventListener("click", ()=>{
+    bootcampImg.style.display = "block";
+    imgInfoDiv.style.display = "none";
+    clickBtn.style.display = "block";
+})
+
 }
 const form = document.getElementById('form')
 form.addEventListener('submit', (e) => submitForm(e))
