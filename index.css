@@ -99,6 +99,27 @@ padding: 10px;
 margin-top:-50px;
 }
 
+/* #commentForm{
+  /* position: relative; */
+  
+
+*/
+
+#inputComment{
+  position: relative;
+  right: 50px;
+  /* bottom: 300px; */
+  top: -10px;
+
+}
+
+#btnSubmit{
+  position: relative;
+  right: 50px;
+  bottom: 300px;
+
+}
+
 #clickBtn:hover{
   cursor:pointer;
 }
@@ -148,6 +169,7 @@ position:relative;
 }
 
 
+
 #blurImg{
   display:none;
   position: fixed;
@@ -158,7 +180,7 @@ position:relative;
 
 }
 
-form{
+#form{
   width: 700px;
   height: 480px;
   background-image: linear-gradient(45deg, rgb(243, 233, 221), rgb(218, 192, 160));
@@ -244,3 +266,4 @@ text-align: center;
   cursor:pointer;
   color:rgb(60, 116, 237);
 }
+
