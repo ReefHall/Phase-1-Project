@@ -36,7 +36,7 @@ function renderBootCamp(bootcamp) {
     bootcampImg.id = "img"
     divElement.id = "DivElement"
     clickBtn.id = "clickBtn"
-    clickBtn.textContent = "CLICK ME"
+    clickBtn.textContent = "Details"
 
     divElement.append(bootcampImg, clickBtn, imgInfoDiv)
     divElement.append(clickBtn)
@@ -44,6 +44,7 @@ function renderBootCamp(bootcamp) {
 
 clickBtn.addEventListener("click", ()=>{
     bootcampImg.style.display = "none";
+
 })
 
 }
@@ -78,4 +79,6 @@ function submitForm(e) {
     banner.style.grid_template_columns = "1fr";
 
 }
+
+
 
