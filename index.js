@@ -60,6 +60,7 @@ clickBtn.addEventListener("click", ()=>{
     clickBtn.style.display ="none";
 
 
+})
 }
 const form = document.getElementById('form')
 form.addEventListener('submit', (e) => submitForm(e))

@@ -54,19 +54,17 @@ border-right:  2.5px solid #807f7f;
 
 .banner{
   width: 100%;
-  /* height: 540px; */
-  /* background-color: #c7e0ee; */
   background-color: rgb(92, 166, 240);
-  /* display:grid;
-  grid-template-columns: 1fr 1fr; */
+  display:grid;
+  grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
   padding: 40px;
   padding-left: 215px;
   padding-right: 215px;
-  display: flex;
-  /* flex-direction: column; */
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  /* grid-gap: 10px; */
   column-gap: 10px;
   row-gap: 40px;
 }
@@ -102,14 +100,15 @@ margin-top:-50px;
 
 .vertical-line{
 height: 0;
+position:relative;
 }
 
 #vertical-line{
   height: 340px;
   border-right:  45px solid #807f7f;
-  position: relative;
+  position: absolute;
   bottom: 540px;
-  right: 1155px;
+  left: 0;
 }
 
 .vertical-line h3{
@@ -126,7 +125,8 @@ form{
   background-image: linear-gradient(45deg, rgb(243, 233, 221), rgb(218, 192, 160));
   position: relative;
   top: 20px;
-  left: 280px;
+  left: 50%;
+  transform: translate(-50%);
   border-radius: 10px;
 }
 
