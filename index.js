@@ -43,13 +43,11 @@ clickBtn.addEventListener("click", ()=>{
     imgInfoDiv.style.width ="300px";
     imgInfoDiv.style.background ="gray";
     imgInfoDiv.style.box_sizing = "border-size";
-    imgInfoDiv.style.padding ="30px";
+    imgInfoDiv.style.padding = "30px";
+    imgInfoDiv.style.border_radius = "30px";
+    imgInfoDiv.style.color = "white";
     clickBtn.style.display ="none";
 
-    setTimeout(()=>{
-        window.location.reload(true)
-        }, 2000)
-})
 
 }
 const form = document.getElementById('form')
@@ -62,6 +60,7 @@ function submitForm(e) {
     const inPutComment = document.getElementById('comment')
     const inPutWebsite = document.getElementById('website')
     const inputImage = document.getElementById('image')
+
 
     const newObj = {
         name: inPutName.value,
@@ -92,8 +91,7 @@ function submitForm(e) {
         li.append(anchor)
         navBar.append(div,li)
 
-
-
+        // inPutName.id = "inPutName"
     banner.style.grid_template_columns = "1fr";
 
 }
