@@ -26,10 +26,14 @@ function renderBootCamp(bootcamp) {
     li.append(anchor)
     navBar.append(li, div)
 
+    const infoName = document.createElement('h1')
+    // const infoAddress = document.createElement('p')
+    // const infoTel = document.createElement('p')
+
     bootcampImg.src = bootcamp.image
+    infoName.textContent = bootcamp.name.toUpperCase()
     bootcampRating.textContent = `Rating: ${bootcamp.rating}`
     bootcampComment.textContent = `Comments: ${bootcamp.comment}`
-    imgInfoDiv.textContent = `Rating: ${bootcamp.rating} Comments: ${bootcamp.comment}`
     imgInfoDiv.style.display ="none";
 
 
@@ -38,13 +42,23 @@ function renderBootCamp(bootcamp) {
     clickBtn.id = "clickBtn"
     clickBtn.textContent = "CLICK ME"
 
+    imgInfoDiv.append(infoName, bootcampRating, bootcampComment)
     divElement.append(bootcampImg, clickBtn, imgInfoDiv)
     divElement.append(clickBtn)
     banner.append(divElement)
 
 clickBtn.addEventListener("click", ()=>{
     bootcampImg.style.display = "none";
-})
+    imgInfoDiv.style.display = "block";
+    imgInfoDiv.style.height ="260px";
+    imgInfoDiv.style.width ="300px";
+    imgInfoDiv.style.background ="gray";
+    imgInfoDiv.style.box_sizing = "border-size";
+    imgInfoDiv.style.padding = "30px";
+    imgInfoDiv.style.border_radius = "30px";
+    imgInfoDiv.style.color = "white";
+    clickBtn.style.display ="none";
+
 
 }
 const form = document.getElementById('form')
@@ -57,6 +71,7 @@ function submitForm(e) {
     const inPutComment = document.getElementById('comment')
     const inPutWebsite = document.getElementById('website')
     const inputImage = document.getElementById('image')
+
 
     const newObj = {
         name: inPutName.value,
@@ -74,6 +89,21 @@ function submitForm(e) {
     })
         .then(response => response.json())
         .then(obj => renderBootCamp(obj))
+
+
+        const navBar = document.querySelector('#navBar')
+        const li = document.createElement('li')
+        const anchor = document.createElement('a')
+        const div = document.createElement('div')
+
+        div.className = 'line'
+        anchor.href = inPutWebsite.value
+        anchor.innerText = inPutName.value
+
+        li.append(anchor)
+        navBar.append(div,li)
+
+        // inPutName.id = "inPutName"
 
     banner.style.grid_template_columns = "1fr";
 
