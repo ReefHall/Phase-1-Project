@@ -96,7 +96,6 @@ function renderBootCamp(bootcamp) {
     clickBtn.id = "clickBtn"
     clickBtn.textContent = "CLICK ME"
 
-   // imgInfoDiv.append(infoName, bootcampRating, bootcampComment)
     divElement.append(bootcampImg, clickBtn, imgInfoDiv, commentForm)
     divElement.append(clickBtn)
     banner.append(divElement)
@@ -175,21 +174,21 @@ function submitForm(e) {
         .then(Obj => renderBootCamp(Obj))
 
 
-    //     const navBar = document.querySelector('#navBar')
-    //     const li = document.createElement('li')
-    //     const anchor = document.createElement('a')
-    //     const div = document.createElement('div')
+    
 
-    //     div.className = 'line'
-    //     anchor.href = inPutWebsite.value
-    //     anchor.innerText = inPutName.value
 
-    //     li.append(anchor)
-    //     navBar.append(div,li)
-
-    //     // inPutName.id = "inPutName"
 
      banner.style.grid_template_columns = "1fr";
 
 }
 
+const verticalLine = document.getElementById("vertical-line")
+const myPopup = document.getElementById('myPopup')
+const recommendations = document.querySelector(".rec")
+verticalLine.addEventListener("mouseover", mouseOver)
+
+function mouseOver(){
+    verticalLine.style.display = "none";
+    myPopup.style.display = "block";
+    recommendations.style.display = "none";
+}
