@@ -29,7 +29,7 @@ function renderBootCamp(bootcamp) {
 
     function renderComment(data) {
      const bootcampComment = document.createElement('p')
-     bootcampComment.innerText = `"${data}"`;
+     bootcampComment.innerText = `"${data}"`
      imgInfoDiv.append(bootcampComment)
     }
 
@@ -44,6 +44,7 @@ function renderBootCamp(bootcamp) {
     btnSubmit.innerText = "Add"
     btnSubmit.style.display = 'none'
     inputComment.style.display = 'none'
+    
 
     commentForm.id = 'commentForm'
     inputComment.id = 'inputComment'
@@ -125,7 +126,9 @@ clickBtn.addEventListener("click", ()=>{
     xBtn.id = "xbtn"
 
 
-    imgInfoDiv.append(xBtn)
+    divElement.append(xBtn)
+    //css 110 px left
+    // -150 top  Changed to divElement append instead of imgInnfoDiv and adjusted CSS sizes
 
 })
 
@@ -133,6 +136,10 @@ xBtn.addEventListener("click", ()=>{
     bootcampImg.style.display = "block";
     imgInfoDiv.style.display = "none";
     clickBtn.style.display = "block";
+    inputComment.style.display = "none";
+    btnSubmit.style.display = "none";
+    imgInfoDiv.append(xBtn) // append back to this div so it doesnt go out of order
+
 })
 
 }
@@ -153,7 +160,7 @@ function submitForm(e) {
         name: inPutName.value,
         image: inputImage.value,
         rating: inPutRating.value,
-        comment:[inPutComment.value],
+        comments:[inPutComment.value],
         website: inPutWebsite.value
     }
     fetch('http://localhost:3000/BootCamps', {
@@ -164,23 +171,14 @@ function submitForm(e) {
         body: JSON.stringify(newObj)
     })
         .then(response => response.json())
-        .then(obj => renderBootCamp(obj))
+        .then(Obj => renderBootCamp(Obj))
 
 
-        const navBar = document.querySelector('#navBar')
-        const li = document.createElement('li')
-        const anchor = document.createElement('a')
-        const div = document.createElement('div')
-
-        div.className = 'line'
-        anchor.href = inPutWebsite.value
-        anchor.innerText = inPutName.value
-
-        li.append(anchor)
-        navBar.append(div,li)
+    
 
 
-    banner.style.grid_template_columns = "1fr";
+
+     banner.style.grid_template_columns = "1fr";
 
 }
 
