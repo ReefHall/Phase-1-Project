@@ -83,14 +83,10 @@ function renderBootCamp(bootcamp) {
     li.append(anchor)
     navBar.append(li, div)
 
-    //const infoName = document.createElement('h1')
-    // const infoAddress = document.createElement('p')
-    // const infoTel = document.createElement('p')
 
     bootcampImg.src = bootcamp.image
     infoName.textContent = bootcamp.name.toUpperCase()
     bootcampRating.textContent = `Rating: ${bootcamp.rating}`
-    //bootcampComment.textContent = `Comments: ${bootcamp.comment}`
     imgInfoDiv.style.display ="none";
 
 
