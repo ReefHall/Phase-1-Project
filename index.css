@@ -103,15 +103,15 @@ margin-top:-50px;
 #inputComment{
   position: relative;
   right: 53px;
-  bottom: 23px;
-  height: 20px;
+  bottom: 31px;
+  height: 28px;
   width: 250px;
 }
 
 #btnSubmit{
   position: relative;
   left: 210px;
-  top: -57px;
+  top: -65px;
   height: 12px;
   width: 40px;
 }
@@ -129,8 +129,8 @@ margin-top:-50px;
 #xbtn{
   position: relative;
   /* margin-top: -180px; */
-  top: -150px;
-  left: 110px;
+  top: -380px;
+  left: 150px;
   /* margin-left: 290px; */
   box-sizing: border-box;
   padding:10px;
