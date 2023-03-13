@@ -4,12 +4,11 @@
       "id": 1,
       "name": "Flatiron",
       "image": "https://mma.prnewswire.com/media/1488233/Flatiron_Primary__Logo_Blue_highres_Logo.jpg?p=facebook",
-      "rating": 0,
+      "rating": 9,
       "comments": [
-        "Great",
-        "The people are amazing!",
-        "I had a bad experience...",
-        "great assistance"
+        "Charlie is the best!",
+        "Chet, literally saved us!",
+        "I wish the program was longer"
       ],
       "website": "https://flatironschool.com/welcome-to-flatiron-school/?utm_source=Google&utm_medium=ppc&utm_campaign=12728169839&utm_content=127574231184&utm_term=flatiron%20school&uqaid=513747011518&CjwKCAiA3pugBhAwEiwAWFzwdf7pZ6L2Vq_fIC1-0SVxwJP_SattpIvAipMpaSuDxDiE9awYm4qzdBoCGnQQAvD_BwE&gclid=CjwKCAiA3pugBhAwEiwAWFzwdf7pZ6L2Vq_fIC1-0SVxwJP_SattpIvAipMpaSuDxDiE9awYm4qzdBoCGnQQAvD_BwE"
     },
@@ -17,11 +16,11 @@
       "id": 2,
       "name": "General Assembly",
       "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAw1BMVEX///8AAADkGiPiAABubm7BwcHkFiCIiIjv7+86Ojrn5+diYmKlpaX++flqamoMDAzlIiurq6vX19e6urrjAAvjChdUVFQTExMtLS319fWBgYHjABCSkpLs7OzHx8fsb3NCQkJ5eXn63N3f39/S0tKhoaH0tLYdHR0lJSWOjo72wsQsLCz4zM3nPEI9PT374+TwkJPyoaTuhonqWl/97/BNTU1ZWVnpT1XmMTjten3zqaz3ycrrZWnoRkzxmZzlKjHugIPeTnfbAAALG0lEQVR4nO2caXvavBKGbQwOSyAsNmDMDkkgK1nbpmnT//+rXs2MZEtGJDltcK7TzvMhtrzVutGMRiO5jsNisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxcpd9fnJTV1sL57Orj/7XT5Zt57nnYntndj+syy+P8/F3x9+wY+fLiZBoeCdiPLt5p8DMv/qxV/P5pO4IBR4ofjrhyfzjRcE3966N4qiPF4xL917ou4eIkjkB54gE969fmfnwXXdXm0J+4N+RenBKZ1XKv2qODpaiZ2ZcXbqLFa0UxtW1ZNmcL7fwv2WuPm8s7/67hC6Sa+wQ/6lvMQuAIESdXWKbqJTpwObtThahZ2a4zTSs72onRbW8lFUquH+Iey29lzxLZ2FJ8I+/F0oCvG3+/vnu3v7zVrlD43SilC44prRNopTR0PhDvFRERWusPApKDaeMARvNwlhIsJw4ubcdvNCq9CRrVW4HSsKo1W4LtrIWBbKUPgMFPX4NQqpglvb3UNq0xXctAlF/4p8BaF4yKCgs1NqFb2ro7RZHEsUbSh8Squ4Dd/mIORZW0WNKhKdUgNAFEt5jlC4CxPFWJ5t08FoBttHOKIazSEUPgXFl/e1Cgy8ttSVdS+6p7VBlVCoykoUg1dRkLPswZErMCuX/G/+KG6u65vgXSQKfvOifrLVMrqyRVcpsrChcN9AscJrHKcMW2gj53A6bxQnIrqOk7qGcRCHaRMJUWnZ9wLvJdupKhRSVhSl8qsoTiUKPNCRhbxRzPV+IyhMfj79nDRVI/GfJ6BLw3zCL5lH2FBkfIX7aKBQZxUK3EIHipWvqufljOJEC6u8Df3g9Rt5MKBA4meso/CbmWZhQ1GZCvWjBIXb1lHQ2TIh6C46aB/gHgawg7EFBJl5G8hz0nl4T8lBAuTHsmS4Eu8i8wRCMa4VhWoLPa4opygGOgrSyAix3JJ4VB84obkMnPxRJP1o+KwdneBY7CsVzIB8a9yOKBay0ssdKNy3UPThUbBTdCBCEaFI3ijqTeUIvO/a4bmnwbk2UMTZOOtNFI/vQQEWhuU1DWmcfFHcTzYviUsM0AVcTDB2QELxRl7WNPym97zZ/E8oht23UWCn0qG6z2BTzRfFTy+NuH0fEYixCPpKCLoC5TzMLqQQxp4+MCNfsSyuNBRGZ7pWZmLtTCtY82Moo0NpVdew6eSLQv+1/SYcqXuFAGOou1ALLu+ycXn8U3uK6kG6u1AcRK+hqKGHmEI5sSS0kzxRGDGFDYVykL+yKAI9lfMmioEyix0oHqVBOBoJ8Jt5top58BoK31dm8JQJzM2k1jtQjF9F0ZIWUtVRrHLuQbSWb0HxVcVSZ5n0ltHZmCjalmhzIAcZu1BgJCqCzZKOQjSTXFFo/jBFgWYhUKQR9jyDIjjRH4K1m43IN44IxbCDSlAcGyjW8qwKQadUdUx81FqtFpZLhGJG1+47iXxjM5D47Ho+vxY9SDhR19UzKPymHmapdAvIzGK5CYqygUIqUiiGZCHoMyDixp5kSCikFnsFsQmCggVFwQP5RjfhZ/IZvhemY3XdxAe23CYE0bVtFKfZ4RiE3WhaLTqeH4ovZpY/QZF4hDRRs53a0bM4B2mjiHahWL6GggbpS2oq6mI3RxTmT21BkY67vm0l/IIb7Ulr+b4PI0f+/lKEAlNS4DgfzbNkIF1HWgRFFXAttbMoPxSX3hso0pByE2dI+AYKJyoNBwctet1lKdHYqcIGB/BtsbM0zpbEbXSQLuvQLSAslqvatXt2m3quwoIi2HElXHy5Y0rk/1Y/LNGmT5IzYlLZeTOzN/0bZEPRJKm+9PoC4qzr+C9HYTWQ73XQfUh5iTPPg5iznulN/zYDsbtN6jbqITnGy5DyfC/ZwMJ0m61GsVhsHKriYvBw3n8cKlfXaVytrho4JV6GC0niAGxm6qYhnIqcMV0xO6TJdboB9tYNvEc4YEgdNj4Uhb0zTVDgQONL7ONqk61huomC+sEHWVJ9K401yhVZmkZmOLZ29G6SBvJlCq/cpA+uJj0sdq1TR8amxQ9FYQ+xUhQQT16/eOgybrO9qTlRtnKTNzYCcahmPylNTRRD54iIoFpbKDD4SlFg7A4xXC2h/GGyB96TW4kiJHdAo9PMMN0IvNUIQ06GR2ldIKbSqiZGWBYUEuDVNgpIgqcoKOW5lLOKHx1n2IZjYSBRNPUrzzJ+xcx6q6UA6A5ohFrpyTpQXpMqWrSiwB9YrkwwUTwaKA7ppio96aNlGaTLHGcY/tAvNJPe2b5UmQS29QN6VWopbRpejJWlj+gnHYEiiQI94NpAMYjUGhUNRZXodGR7+WBZUjcJiol+4b05K/TdfAxYL1QL/aaaChSudFocobmsyIa68iftqfuOVP2TXJ5EcSBzGAYKeWiQHvhA2RJ6CkWAQ/T7X7eY6K8bi5Oyq9TAaxapytKrCRTjMdgzNo6+8CA0QrGiaOmrbRQKJBoZKLBljR72YR/WNK9CgX2o8BFBAa81uxsjzUutHqsAfnMGO0mIQU50pIpWFA/yJgPF1XarwP3W6V7sw5b8T1Bgr/oUyJ5kYqAwkv+UXlgqEx6qX5p0js1CzS5bUQhSPRPFgDZdEwX2IZW92Iez0aeEJIo4xK2c9RGjc1p1pA/TM1NC1HDx5x8qMMJYjqm/k793t5SiOBrMhFopipa8J0FxlPQtBgqVwPjYUBNlTBTStPnTN2wN914BA4rnUPpIbbySnSjE2vbQYeB6y2RiB61kpEqVhWOEWMUURU3Zh9mZHjsZFOpZ+1nWqk0f67HCmUd9qehtKcROh+lb08c4831OAQQUo6mqC4bO46RqYwPFLEWRSkfRiLIoZBzm7imPkywqMOz/OaBZdAGKJpHTwGL7YwB4uy51crjeknZB6DEWV6oYWVAcKTdxtNUqeqMsimQOYS9Klpr4cVrHEy/+Bdv7MJkDSFFkl5pghnJArymHBlXZ4k+pWOqqFq+haBCKU3npQ19DcTWryDqbKKi0p2Xfmg/wm3KIBQuQaBYd2oLMZiWBxdYCpA7VUk33kSJKfKtetL2iqskeJIqiciQNRBpQa6WhWFs7U0f2R+X9oNBjC9+7/KaWpfl3sCANo1Ef16Yl/nVrWVpiDq4R+2DDT5ZoYR/xYOtMI7KQak9DcSBtYZlF0Sc72492LVb0cZ0iVT5ZseiLi7ONIl3378JCqkTG3ClFnRU5BjFRrIlSBsUh2VueKP54CSstaFaC12y3ZlUZUAgU0fh4/RqKcpssS3ebqlXkjAL0JwubjaUAou4ViQAbSxsH332JYmpDMcLBazWL4pHsK3cUf7LcHb3m+axITr9Fb1uMKAExoqqUaBCu3Ga5CiorFMeY4dRRzMpDiYDuVzfsH8UffQSBLw3TolQJ6UUpejpSOS1yjcNMblOiIG3HFTBOM2/IoVW879OYsGBrFV1qDDKsrDhL7eUP0jGni1ZgyWK9gqKUTYbmgAI+mKr/5gdT+JYQWtFQK9IqD0lZLdVZtKZ5d6OYOZ+B4vc/o6N3HSVQFmlD6GG2ZrFKSdiS/xKFSv6n0+fHjrOFYpUDCtBvfVy5GBwcHAxwdwh7EFQtho3H2iyJj0uz2mNjjVwiuJo0EL4UtqpisrCkK45lCG/eQP9EDijgk9sX+ye3k7fv/suUfogd/NsfYivx5/mJ+D9tYLFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8X6t/UfXrfmOduuHkIAAAAASUVORK5CYII=",
-      "rating": 0,
+      "rating": 8,
       "comments": [
-        "ok",
+        "It is very fast pace, but fun",
         "Wished they taught Ruby",
-        "Higly recommend"
+        "My cohort made my experience"
       ],
       "website": "https://generalassemb.ly/?topic=&mkt_account_id=1056949875&mkt_campaign_id=688004765&mkt_ad_group_id=34925049026&mkt_device_type=c&mkt_keyword=general%20assembly&mkt_matchtype=e&mkt_placement=&mkt_ad_id=591470833574&mkt_network=g&mkt_target_id=kwd-459322816&mkt_feed_item_id=&utm_source=google&utm_medium=paid-search-bra&utm_campaign=TS:TX:BRA:NYC:BR:GeneralAssembly&utm_content=campus-lead-lander&utm_term=general%20assembly&gclid=CjwKCAiA3pugBhAwEiwAWFzwdWpDOJgOrEG7RVZYgvvUfYbJzUWgABFGnNJh_LzZIgP2hv4RYjurYhoC_60QAvD_BwE&gclsrc=aw.ds"
     },
@@ -29,11 +28,11 @@
       "id": 3,
       "name": "CodeSmith",
       "image": "https://centerforworklife.com/wp-content/uploads/2022/11/CodeSmith-Review.jpeg",
-      "rating": 0,
+      "rating": 9,
       "comments": [
-        "Great",
-        "Verd hard",
-        "Fast pace"
+        "Extremely challenging",
+        "Very rigorous, but rewarding",
+        "I failed after 2 weeks!"
       ],
       "website": "https://www.codesmith.io"
     },
@@ -41,42 +40,15 @@
       "id": 4,
       "name": "Fullstack Academy",
       "image": "https://top10codingbootcamps.com/wp-content/uploads/2022/05/fullstack-academy-logo-square-lg.jpg",
-      "rating": 0,
+      "rating": 7,
       "comments": [
         "The teachers aren't good",
-        "Student services is non-existent"
+        "Student services is non-existent",
+        "F***ing scam!!!"
       ],
       "website": "https://www.fullstackacademy.com/?utm_term=fullstack%20academy&utm_campaign=fsa_tech_all_google_sr_all_all_core_brand&utm_source=adwords&utm_medium=ppc&hsa_acc=9053058724&hsa_cam=658038665&hsa_grp=38873009648&hsa_ad=596321368699&hsa_src=g&hsa_tgt=kwd-75657140544&hsa_kw=fullstack%20academy&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiA3pugBhAwEiwAWFzwdQwuR5f9P433MYWt2iwG7TxqZrukjL0uJupB-SQHB72mww9K6y9uRRoCQK4QAvD_BwE"
-    },
-    {
-      "name": "Coding Dojo",
-      "image": "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/5/original/cd-logo-blue-600x600.png",
-      "rating": "8",
-      "comment": [
-        "it's good "
-      ],
-      "website": "https://www.codingdojo.com/",
-      "id": 5
-    },
-    {
-      "name": "Coding Dojo",
-      "image": "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/5/original/cd-logo-blue-600x600.png",
-      "rating": "8",
-      "comment": [
-        "it's good "
-      ],
-      "website": "https://www.codingdojo.com/",
-      "id": 6
-    },
-    {
-      "name": "Coding Dojo",
-      "image": "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/5/original/cd-logo-blue-600x600.png",
-      "rating": "8",
-      "comment": [
-        "it's good "
-      ],
-      "website": "https://www.codingdojo.com/",
-      "id": 7
     }
+    
+     
   ]
 }
